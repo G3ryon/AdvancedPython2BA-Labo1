@@ -13,11 +13,13 @@ class TestUtils(unittest.TestCase):
         pass
     
     def test_roots(self):
-        # À compléter...
+        self.assertEqual(utils.roots(1,2,1),1)
+        self.assertEqual(utils.roots(1,1,1),0)
+        self.assertEqual(utils.roots(1,5,1),2)
         pass
     
     def test_integrate(self):
-        # À compléter...
+        self.assertEqual(integrate('x ** 2 - 1', -1, 1),0)
         pass
 
 if __name__ == '__main__':
